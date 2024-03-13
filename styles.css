@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* To prevent scrolling */
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    overflow: hidden; /* To prevent overflow of child elements */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+    display: block;
+}
+
+button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #080205;
+    color: rgb(214, 224, 224);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
